@@ -1,8 +1,6 @@
 # UTS_Zulfa_arifqi_23552011319_Pemrograman_web
 
 #SCREENSHOT PROJECT1
-![Uploading image.png…]()
-
 <img width="1363" height="646" alt="Cuplikan layar 2025-11-22 214651" src="https://github.com/user-attachments/assets/d35aef02-8ece-462a-b21f-2a7580227645" />
 
 #SCREENSHOT PROJECT2

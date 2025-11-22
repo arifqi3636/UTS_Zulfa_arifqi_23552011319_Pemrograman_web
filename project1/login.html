@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #9ad0ff, #6a8bfa);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            background: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h3 class="text-center">Login</h3>
+
+    <label>Username</label>
+    <input type="text" id="user" class="form-control">
+
+    <label class="mt-2">Password</label>
+    <input type="password" id="pass" class="form-control">
+
+    <button onclick="login()" class="btn btn-primary w-100 mt-3">Masuk</button>
+
+    <small>Belum punya akun? <a href="register.html">Daftar</a></small>
+</div>
+
+<footer style="position: absolute; bottom: 0; width: 100%; text-align: center; color:white;">
+    ©Copyright by 23552011319_ZULFA ARIFQI_23CNS-A
+</footer>
+
+<script>
+function login(){
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
+    if(user === "admin" && pass === "123"){
+        alert("Login berhasil!");
+        window.location.href = "menu.html";
+    } else {
+        alert("Username atau password salah!");
+    }
+}
+</script>
+
+</body>
+</html>

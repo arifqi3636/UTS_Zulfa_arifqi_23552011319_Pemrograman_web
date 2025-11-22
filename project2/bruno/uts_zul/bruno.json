@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "uts_zul",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

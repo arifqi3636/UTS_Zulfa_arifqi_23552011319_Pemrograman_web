@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Informasi</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #a2d9ff, #7ca6ff);
+            min-height: 100vh;
+        }
+        .card-box {
+            margin-top: 50px;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        footer {
+            background: rgba(0,0,0,0.25);
+            color: white;
+            padding: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card-box">
+        <h3 id="judul"></h3>
+        <p id="isi"></p>
+
+        <a href="index.html" class="btn btn-secondary mt-3">Kembali</a>
+    </div>
+</div>
+
+<footer>
+    ©Copyright by 23552011319_ZULFA ARIFQI_23CNS-A
+</footer>
+
+<script>
+    const url = new URLSearchParams(window.location.search);
+    const info = url.get("info");
+
+    if(info === "profil"){
+        document.getElementById("judul").innerText = "Profil Perusahaan";
+        document.getElementById("isi").innerText = "Ini adalah informasi profil perusahaan penyedia layanan teknologi modern";
+    }
+    else if(info === "visi"){
+        document.getElementById("judul").innerText = "Visi & Misi";
+        document.getElementById("isi").innerText = "Berikut adalah visi dan misi perusahaan Menjadi pemimpin teknologi Asia";
+    }
+    else if(info === "produk"){
+        document.getElementById("judul").innerText = "Produk & Layanan";
+        document.getElementById("isi").innerText = "Daftar produk dan layanan perusahaan...";
+    }
+</script>
+
+</body>
+</html>

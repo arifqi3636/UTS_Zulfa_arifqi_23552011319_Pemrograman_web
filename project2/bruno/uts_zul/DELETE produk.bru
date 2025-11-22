@@ -1,0 +1,16 @@
+meta {
+  name: DELETE produk
+  type: http
+  seq: 7
+}
+
+delete {
+  url: http://localhost:3000/produk/3
+
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
